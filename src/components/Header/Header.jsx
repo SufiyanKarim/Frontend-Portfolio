@@ -114,7 +114,7 @@ const Header = () => {
             href="#home"
             className="text-xs lg:text-2xl md:text-2xl font-bold text-gray-900 dark:text-gray-100"
           >
-            Sufiyan Karim
+            Sufiyan <span className=" border-b-2 border-orange-500 text-orange-500">Karim</span>
           </a>
 
           {/* Desktop Navigation */}

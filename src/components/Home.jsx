@@ -18,8 +18,8 @@ const Home = () => {
                 options={{
                   strings: [
                     "React Developer",
-                    "UI & UX Designer",
                     "Web Developer",
+                    "UI & UX Designer",
                   ],
                   autoStart: true,
                   loop: true,
@@ -73,6 +73,7 @@ const Home = () => {
               >
                 <FaLinkedin size={24} />
               </a>
+              
             </div>
           </div>
         </div>

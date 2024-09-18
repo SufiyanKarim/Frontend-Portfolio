@@ -11,7 +11,7 @@ const Projects = () => {
   const projectData = [
     { id: 1, link: 'https://admin-dashboardsyncfusion.vercel.app', image: adminDashboard, name: 'Admin Dashboard', description: 'I can make an admin-dashboard. It is fully responsive and attractive for users.' },
     { id: 2, link: 'https://currency-converterjs.vercel.app', image: currencyImage1, name: 'Currency Converter', description: 'I can make a currency converter app with real-time API' },
-    { id: 3, link: 'https://my-all-personal-projects.vercel.app/', image: allProjqqects, name: 'All Projects', description: 'All my projects are available here. You can visit and see them.' },
+    { id: 3, link: 'https://my-all-personal-projects.vercel.app/', image: allProjects, name: 'All Projects', description: 'All my projects are available here. You can visit and see them.' },
     { id: 4, link: 'https://ahmadmamoon.netlify.app', image: project3, name: 'Project 4', description: 'Graphic Design' },
     { id: 5, link: 'https://ahmadmamoon.netlify.app', image: project4, name: 'Project 5', description: 'Web Development' },
     { id: 6, link: 'https://ahmadmamoon.netlify.app', image: project5, name: 'Project 6', description: 'Graphic Art' },

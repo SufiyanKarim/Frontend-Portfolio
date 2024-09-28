@@ -1,14 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa"; // Import icons
 import Typewriter from "typewriter-effect";
 import portfolioImage from "../assets/sufiyan.jpg";
+import AOS from "aos"; // Import AOS
+import "aos/dist/aos.css"; // Import AOS styles
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init(); // Initialize AOS
+  }, []);
+
   return (
     <section id="home" className="h-auto lg:h-[75vh] max-w-[100%] mt-8">
       <main className="max-w-[90%] mx-auto pt-16 md:pt-36 px-4 lg:px-8 pb-10">
         <div className="flex flex-col md:flex-row md:items-center md:justify-around h-full">
-          <div className="md:w-1/2 mb-8 md:mb-0 lg:ml-20 mx-auto">
+          <div
+            className="md:w-1/2 mb-8 md:mb-0 lg:ml-20 mx-auto"
+            data-aos="fade-up" // Apply AOS effect
+            data-aos-duration="1000"
+          >
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Hi I am</h1>
             <h2 className="text-4xl md:text-5xl font-bold text-orange-500 mb-4">
               Sufiyan Karim
@@ -41,7 +51,11 @@ const Home = () => {
               Hire Me
             </a>
           </div>
-          <div className="md:w-2/6 flex justify-center items-center flex-col gap-4">
+          <div
+            className="md:w-2/6 flex justify-center items-center flex-col gap-4"
+            data-aos="fade-up" // Apply AOS effect
+            data-aos-duration="1000"
+          >
             <img
               src={portfolioImage}
               alt="Sufiyan Karim"
@@ -73,7 +87,6 @@ const Home = () => {
               >
                 <FaLinkedin size={24} />
               </a>
-              
             </div>
           </div>
         </div>

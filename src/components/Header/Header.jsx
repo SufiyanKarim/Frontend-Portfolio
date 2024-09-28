@@ -105,7 +105,7 @@ const Header = () => {
   return (
     <div
       className={`fixed top-0 w-full z-50 transition-all duration-300 shadow-md ${
-        scrolled ? "py-2 lg:py-3 bg-opacity-90" : "py-4 lg:py-6"
+        scrolled ? "py-2 lg:py-3 bg-opacity-90" : "py-2 lg:py-3"
       } bg-gray-100 dark:bg-gray-900`}
     >
       <div className="lg:max-w-[90%] lg:mx-auto w-full px-4 sm:px-6 lg:px-8">

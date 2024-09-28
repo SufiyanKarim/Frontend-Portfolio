@@ -1,20 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import currencyImage1 from '../assets/currencyImage1.png';
 import adminDashboard from '../assets/project1.png';
 import allProjects from '../assets/allProjects.png';
 import project3 from '../assets/project3.avif';
 import project4 from '../assets/project4.png';
 import project5 from '../assets/project5.avif';
+import AOS from 'aos'; // Import AOS
+import 'aos/dist/aos.css'; // Import AOS styles
 
 const Projects = () => {
+  useEffect(() => {
+    AOS.init(); // Initialize AOS
+  }, []);
+
   // Project data including links, names, and descriptions
   const projectData = [
     { id: 1, link: 'https://admin-dashboardsyncfusion.vercel.app', image: adminDashboard, name: 'Admin Dashboard', description: 'I can make an admin-dashboard. It is fully responsive and attractive for users.' },
     { id: 2, link: 'https://currency-converterjs.vercel.app', image: currencyImage1, name: 'Currency Converter', description: 'I can make a currency converter app with real-time API' },
     { id: 3, link: 'https://my-all-personal-projects.vercel.app/', image: allProjects, name: 'All Projects', description: 'All my projects are available here. You can visit and see them.' },
-    { id: 4, link: 'https://ahmadmamoon.netlify.app', image: project3, name: 'Project 4', description: 'Graphic Design' },
-    { id: 5, link: 'https://ahmadmamoon.netlify.app', image: project4, name: 'Project 5', description: 'Web Development' },
-    { id: 6, link: 'https://ahmadmamoon.netlify.app', image: project5, name: 'Project 6', description: 'Graphic Art' },
+    { id: 4, link: '#', image: project3, name: 'Project 4', description: 'Graphic Design' },
+    { id: 5, link: '#', image: project4, name: 'Project 5', description: 'Web Development' },
+    { id: 6, link: '#', image: project5, name: 'Project 6', description: 'Graphic Art' },
   ];
 
   return (
@@ -30,6 +36,8 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer" // Added for security when opening in a new tab
               className="relative block h-48 sm:h-64 rounded-lg overflow-hidden group shadow-lg"
+              data-aos="fade-up" // AOS effect
+              data-aos-duration="1000" // Duration of the animation
             >
               {/* Background image with hover effect */}
               <div

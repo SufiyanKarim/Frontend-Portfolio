@@ -23,7 +23,7 @@ const Projects = () => {
     },
     {
       id: 2,
-      link: "https://digital-gateway-service.vercel.app/",
+      link: "https://digital-gateway-services.vercel.app/",
       image: DGSDashboard,
       name: "Gigital Gateway Service Dashboard",
       description:
